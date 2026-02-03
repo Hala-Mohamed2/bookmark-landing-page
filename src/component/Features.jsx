@@ -65,7 +65,7 @@ export default function Features() {
                 src="./images/illustration-features-tab-2.svg"
                 alt=""
               />
-              <div className="pt-9 md:w-[380px]">
+              <div className="pt-9 md:w-[380px] text-center md:text-left">
                 <h2 className="text-gray-800 text-3xl font-medium">
                   Intelligent search
                 </h2>
@@ -88,7 +88,7 @@ export default function Features() {
                 src="./images/illustration-features-tab-3.svg"
                 alt=""
               />
-              <div className="pt-9 w-[380px]">
+              <div className="pt-9 md:w-[380px] text-center md:text-left">
                 <h2 className="text-gray-800 text-3xl font-medium">
                   Share your bookmarks
                 </h2>
