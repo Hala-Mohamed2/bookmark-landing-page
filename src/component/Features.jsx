@@ -5,7 +5,7 @@ export default function Features() {
 
   return (
     <div>
-      <div className="text-center w-[500px] mx-auto mt-14">
+      <div className="text-center px-6 md:px-0 md:w-[500px] mx-auto mt-14">
         <h2 className="text-gray-800 text-3xl font-medium">Features</h2>
         <p className="text-gray-500 py-6">
           Our aim is to make it quick and easy for you to access your favourite
@@ -15,33 +15,33 @@ export default function Features() {
       </div>
 
       <div>
-        <div className="text-center pt-9 mx-auto border-b border-gray-300 w-[700px] pb-6 flex justify-center text-gray-500 text-[20px] gap-19">
+        <div className="text-center pt-9 mx-auto md:border-b border-gray-300 md:w-[700px] pb-6 flex flex-col gap-5 md:flex-row justify-center text-gray-500 text-[16px] md:text-[20px] md:gap-19">
           <button
             onClick={() => setHead("Bookmark")}
-            className="cursor-pointer"
+            className="cursor-pointer border-b border-gray-300 pb-5 md:border-b-0"
           >
             Simple Bookmarking
           </button>
           <button
             onClick={() => setHead("searching")}
-            className="cursor-pointer"
+            className="cursor-pointer border-b border-gray-300 pb-5 md:border-b-0"
           >
             Speedy Searching
           </button>
-          <button onClick={() => setHead("sharing")} className="cursor-pointer">
+          <button onClick={() => setHead("sharing")} className="cursor-pointer border-b border-gray-300 pb-5 md:border-b-0">
             Easy Sharing
           </button>
         </div>
 
         {head == 
           "Bookmark" &&(
-            <div className="container py-13 flex gap-22 ">
+            <div className="container py-13 flex flex-col md:flex-row gap-22 ">
               <img
-                className="w-[480px]"
+                className="md:w-[480px]"
                 src="./images/illustration-features-tab-1.svg"
                 alt=""
               />
-              <div className="pt-9 w-[380px]">
+              <div className="pt-9 md:w-[380px] text-center md:text-left">
                 <h2 className="text-gray-800 text-3xl font-medium">
                   Bookmark in one click
                 </h2>
@@ -50,7 +50,7 @@ export default function Features() {
                   drag-and-drop interface gives you complete control over how
                   you manage your favourite sites.
                 </p>
-                <button className="bg-blue-600 text-white text-[13px] py-2 px-4 cursor-pointer rounded-sm">
+                <button className="bg-blue-600 text-white text-[13px] hidden md:flex py-2 px-4 cursor-pointer rounded-sm">
                   More Info
                 </button>
               </div>
@@ -59,13 +59,13 @@ export default function Features() {
 
           {head == 
           "searching" &&(
-            <div className="container py-13 flex gap-22 ">
+            <div className="container py-13 flex flex-col md:flex-row gap-22 ">
               <img
-                className="w-[480px]"
+                className="md:w-[480px]"
                 src="./images/illustration-features-tab-2.svg"
                 alt=""
               />
-              <div className="pt-9 w-[380px]">
+              <div className="pt-9 md:w-[380px]">
                 <h2 className="text-gray-800 text-3xl font-medium">
                   Intelligent search
                 </h2>
@@ -82,7 +82,7 @@ export default function Features() {
 
           {head == 
           "sharing" &&(
-            <div className="container py-13 flex gap-22 ">
+            <div className="container py-13 flex flex-col md:flex-row gap-22 ">
               <img
                 className="w-[480px]"
                 src="./images/illustration-features-tab-3.svg"

@@ -31,17 +31,17 @@ export default function Questions() {
 
 return (
     <div>
-        <div className="text-center pt-16 mx-auto w-[500px]">
+        <div className="text-center pt-16 mx-auto px-6 md:w-[500px]">
             <h2 className="text-gray-800 text-3xl font-medium">Frequently Asked Questions</h2>
             <p className="text-gray-500 py-4">Here are some of our FAQs. If you have any other questions you’d like 
             answered please feel free to email us.</p>
         </div>
 
-        <div className="my-9">
+        <div className="my-9 px-6">
             {quests.map((quest,index)=> (
-                <div className="w-[600px] mx-auto border-t border-gray-200 py-4 last:border-b last:border-gray-300">
+                <div className="md:w-[600px] mx-auto border-t border-gray-200 py-4 last:border-b last:border-gray-300">
                     <div onClick={()=> setOpen(open == index ? null : index)} className="flex items-center justify-between cursor-pointer">
-                        <h2 className="text-gray-800 text-[20px]">{quest.title}</h2>
+                        <h2 className="text-gray-800 text-[16px] md:text-[20px]">{quest.title}</h2>
                         <img src={quest.img} alt="" />
                     </div>
                     <p className={`text-gray-500 text-sm pt-4 ${open == index? "block" : "hidden"}`}>{quest.desc}</p>
